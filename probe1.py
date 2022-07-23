@@ -1,4 +1,7 @@
 n = input().split()
-n.insert(0, n[-1])
-del n[-1]
-print(*n)
+total = []
+for i in n:
+    if i not in total:
+        total.append(i)
+
+print(len(total))
