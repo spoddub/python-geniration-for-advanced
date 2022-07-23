@@ -1,11 +1,11 @@
-l = [int(input()) for n in range(int(input()))]
-n = int(input())
-fl = False
-
-for i in range(len(l)):
-    for j in range(i + 1, len(l)):
-        if l[i] * l[j] == n:
-            fl = True
-            break
-
-print('ДА' if fl == True else 'НЕТ')
+x, y = int(input()), int(input())
+if x == 'камень' and y == 'ножницы':
+    print('Тимур')
+elif x == 'ножницы' and y == 'бумага':
+    print('Тимур')
+elif x == 'бумага' and y == 'камень':
+    print('Тимур')
+elif x == y:
+    print('ничья')
+else:
+    print('Руслан')
