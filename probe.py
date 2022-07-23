@@ -1,6 +1,3 @@
-string = input().split()
-total = 0
-for i in range(len(string)):
-    total += 1
-print(total)
-
+animals = ["Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Бык", "Тигр", "Заяц", "Дракон", "Змея", "Лошадь", "Овца"]
+year = int(input()) % 12
+print(animals[year])
