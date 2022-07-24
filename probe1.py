@@ -1,9 +1,6 @@
-list1 = [[1, 7, 8], [9, 7, 102], [102, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
-total = 0
-counter = 0
-
-for i in list1:
-    for j in i:
-        total += i
-        counter += 1
-print(total / counter)
+my_list = []
+n = int(input())
+for i in range(1, n + 1):
+    my_list.append(i)
+my_list = [my_list] * n
+print(*my_list, sep='\n')
