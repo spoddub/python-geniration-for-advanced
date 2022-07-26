@@ -1,19 +1,11 @@
-n, m = int(input()), int(input())
+n = int(input())
 matrix = []
 for i in range(n):
-    row = []
-    for j in range(m):
-        row.append(input())
-    matrix.append(row)
+    temp = [int(num) for num in input().split()]
+    matrix.append(temp)
+summa = 0
 
-for r in range(n):
-    for c in range(m):
-        print(matrix[r][c], end=' ')
-    print()
+for i in range(n):
+    summa += matrix[i][i]
 
-print()
-
-for r in range(m):
-    for c in range(n):
-        print(matrix[c][r], end=' ')
-    print()
+print(summa)
