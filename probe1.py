@@ -1,10 +1,12 @@
-a = input().split()
-s = []
-x = ''
-for i in a:    
-    if x != i:    
-        s.append(list(i))    
-    else:
-        s[-1].append(i)      
-    x = i    
-print(s)    
+n, m = int(input()), int(input())
+matrix = []
+for i in range(n):
+    row = []
+    for j in range(m):
+        row.append(input())
+    matrix.append(row)
+
+for r in range(n):
+    for c in range(m):
+        print(matrix[r][c], end=' ')
+    print()
