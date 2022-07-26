@@ -10,3 +10,10 @@ for r in range(n):
     for c in range(m):
         print(matrix[r][c], end=' ')
     print()
+
+print()
+
+for r in range(m):
+    for c in range(n):
+        print(matrix[c][r], end=' ')
+    print()
