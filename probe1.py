@@ -21,3 +21,6 @@ n = int(input())
 
 for i in range(n):
     print(input())
+
+myset4 = set((10, 20, 30, 40))
+print(myset4)
