@@ -26,3 +26,5 @@ for i in range(n):
 
         print(f'{matrix[i][j]}'.ljust(3), end='')
     print()
+
+    numbers = ((0, (9, 2)), (1, (4, 6, 3), (5, 2, 3), 8, 3))
