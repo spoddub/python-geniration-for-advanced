@@ -12,3 +12,12 @@ for i in range(len(poets)):
 
 print(poets[0])
 print(poets[-1])
+
+
+
+
+
+n = int(input())
+
+for i in range(n):
+    print(input())
