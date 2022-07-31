@@ -28,3 +28,12 @@ for i in range(n):
     print()
 
     numbers = ((0, (9, 2)), (1, (4, 6, 3), (5, 2, 3), 8, 3))
+
+
+tuples = [(10, 20, 40), (40, 50, 60), (70, 80, 90), (10, 90), (1, 2, 3, 4), (5, 6, 10, 2, 1, 77)]
+new_tuples = list(tuples)
+for i in new_tuples:
+    i[-1] = 100
+
+
+print(new_tuples)
