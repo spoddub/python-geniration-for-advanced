@@ -50,5 +50,10 @@ for i in s:
     num = i
 
 
+ms1, ms2 = set(input().split()), set(input().split())
+print(ms1)
+print(ms2)
+
+
 
 
