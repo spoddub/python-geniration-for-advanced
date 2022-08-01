@@ -56,4 +56,14 @@ print(ms2)
 
 
 
+n = int(input())
+my_list = set(int(input()))
+for i in range(n):
+    my_list = my_list - set(int(input()))
+print(*my_list)
+
+
+
+
+
 
