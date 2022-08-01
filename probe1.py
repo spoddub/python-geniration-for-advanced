@@ -27,3 +27,9 @@ print(myset4)
 
 
 print(len(set(input())))
+
+s = input().split()
+if s[0] == s[1] == s[2]:
+    print('YES')
+else:
+    print('NO')
