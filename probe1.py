@@ -24,3 +24,6 @@ for i in range(n):
 
 myset4 = set((10, 20, 30, 40))
 print(myset4)
+
+
+print(len(set(input())))
