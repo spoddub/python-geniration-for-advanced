@@ -33,3 +33,10 @@ if s[0] == s[1] == s[2]:
     print('YES')
 else:
     print('NO')
+
+
+n = int(input())
+for i in range(n):
+    print(len(set((input().lower()))))
+
+
