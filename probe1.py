@@ -40,3 +40,15 @@ for i in range(n):
     print(len(set((input().lower()))))
 
 
+s = input().split()
+num = 0
+for i in s:
+    if i.lstrip() == num:
+        print('YES')
+    else:
+        print('NO')
+    num = i
+
+
+
+
