@@ -172,3 +172,8 @@ result = dict1.update(dict2)
 
 print(dict1)
 
+text = 'footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff'
+
+result = {}
+for letter in text:
+    result[letter] = result.get[letter, 0] + 1
