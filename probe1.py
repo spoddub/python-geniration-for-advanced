@@ -156,3 +156,9 @@ for key in message:
     output.append(keyboard[message])
 
 print(*output)
+
+
+result = {}
+for i in range(1, 15):
+    result = result.setdefault(i, i * i)
+print(result)
