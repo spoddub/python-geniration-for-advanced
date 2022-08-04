@@ -1,68 +1,7 @@
-poets = [
-    ('Тургенев', 14),
-    ('Есенин', 13),
-    ('Маяковский', 28),
-    ('Фет', 15),
-    ('Лермонтов', 20)]
-
-for i in range(len(poets)):
-    for j in range(i+1, len(poets)):
-        if poets[i] > poets[j]:
-            poets[i], poets[j] = poets[j], poets[i]
-
-print(poets[0])
-print(poets[-1])
-
-
-
-
-
-n = int(input())
-
-for i in range(n):
-    print(input())
-
-myset4 = set((10, 20, 30, 40))
-print(myset4)
-
-
-print(len(set(input())))
-
-s = input().split()
-if s[0] == s[1] == s[2]:
-    print('YES')
-else:
-    print('NO')
-
-
-n = int(input())
-for i in range(n):
-    print(len(set((input().lower()))))
-
-
-s = input().split()
-num = 0
-for i in s:
-    if i.lstrip() == num:
-        print('YES')
-    else:
-        print('NO')
-    num = i
-
-
-ms1, ms2 = set(input().split()), set(input().split())
-print(ms1)
-print(ms2)
-
-
-
-n = int(input())
-my_list = set(int(input()))
-for i in range(n):
-    my_list = my_list - set(int(input()))
-print(*my_list)
-
-
+# Дополните приведенный код, чтобы он вывел имена всех пользователей (в алфавитном порядке),
+# чей номер оканчивается на 8.
+#
+# Примечание. Имена необходимо вывести на одной строке, разделяя символом пробела.
 
 users = [{'name': 'Todd', 'phone': '551-1414', 'email': 'todd@gmail.com'},
          {'name': 'Helga', 'phone': '555-1618', 'email': 'helga@mail.net'},
@@ -80,10 +19,10 @@ users = [{'name': 'Todd', 'phone': '551-1414', 'email': 'todd@gmail.com'},
          {'name': 'Maria', 'phone': '12-129-3148', 'email': 'm.sharapova@gmail.com'},
          {'name': 'Fedor', 'phone': '+7445-341-0545', 'email': ''},
          {'name': 'Tim', 'phone': '242-449-3141', 'email': 'timm.ggg@yandex.ru'}]
-for user in users:
-    for phone in users[1]:
-        if phone.endswith('8'):
-            print(users['name'])
 
 
-
+names = []
+for i in users:
+    if i['phone'][-1]=='8':
+        names.append(i['name'])
+print(*sorted(names))
