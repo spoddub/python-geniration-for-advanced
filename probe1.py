@@ -1,7 +1,8 @@
 import random
-
-n = int(input())    # количество попыток
+n = int(input())
 for _ in range(n):
-    print(random.randint('Орел', 'Решка'))
+    print(random.randint(1, 6))
+
+
 
 
