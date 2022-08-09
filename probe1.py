@@ -1,11 +1,10 @@
 import random
 
-length = int(input())
-password = []
-for symbol in range(length):
-    num = random.randint(1, 2)
-    if num == 1:
-        password.append(chr(random.randint(65, 90)))
+
+lottery = set()
+for i in range(100):
+    if len(lottery) < 7:
+        lottery.add(random.randint(1, 49))
     else:
-        password.append(chr(random.randint(97, 122)))
-print(*password, sep='')
+        continue
+print(*sorted(lottery))
