@@ -1,6 +1,7 @@
-def mean(*args):
+def greet(*args):
     sp = []
     for i in args:
-        if type(i) in (int, float):
-            sp.append(i)
-    return sum(sp) / len(sp)
+        sp.append(i)
+    for i in sp:
+        if len(sp) > 1:
+            return 'Hello,', *sp,
