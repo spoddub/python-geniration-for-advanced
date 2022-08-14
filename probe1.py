@@ -1,7 +1,3 @@
-def greet(*args):
-    sp = []
-    for i in args:
-        sp.append(i)
-    for i in sp:
-        if len(sp) > 1:
-            return 'Hello,', *sp,
+def info_kwargs(**kwargs):
+    for key, value in sorted(kwargs.items()):
+        print(key + ':' + str(value))
