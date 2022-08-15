@@ -1,5 +1,8 @@
-numbers = [(10, 10, 10), (30, 45, 56), (81, 39), (1, 2, 3), (12,), (-2, -4, 100), (1, 2, 99), (89, 9, 34), (10, 20, 30, -2), (50, 40, 50), (34, 78, 65), (-5, 90, -1, -5), (1, 2, 3, 4, 5, 6), (-9, 8, 4), (90, 1, -45, -21)]
-def average(x):
-    return sum(x) / len(x)
-print(min(numbers, key=average))
-print(max(numbers, key=average))
+from math import sqrt
+points = [(-1, 1), (5, 6), (12, 0), (4, 3), (0, 1), (-3, 2), (0, 0), (-1, 3), (2, 0), (3, 0), (-9, 1), (3, 6), (8, 8)]
+def distance(a):
+    point = (a[0] ** 2 + a[1] ** 2)
+    point = sqrt(point)
+    return point
+
+print(sorted(points, key=distance))
