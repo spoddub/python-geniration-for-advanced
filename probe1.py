@@ -1,12 +1,12 @@
-from math import *
-def resulting(number, word):
-    functions = {'квадрат': number ** 2,
-                 'куб': number ** 3,
-                 'корень': sqrt(number),
-                 'модуль': abs(number),
-                 'синус': sin(number)}
-    return functions[word]
+string = input().split()
 
 
-num, wrd = int(input()), input().lower()
-print(resulting(num, wrd))
+def summing(num):
+    n = []
+    for i in num:
+        n.append(int(i))
+    return sum(n)
+
+
+string.sort(key=summing)
+print(*string)
