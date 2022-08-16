@@ -1,8 +1,12 @@
-numbers = [(10, 10, 10), (30, 45, 56), (81, 80, 39), (1, 2, 3), (12, 45, 67), (-2, -4, 100), (1, 2, 99), (89, 90, 34), (10, 20, 30), (50, 40, 50), (34, 78, 65), (-5, 90, -1)]
+def sorting(x):
+    return x[number - 1]
 
 
-def sorting(tuple):
-    return min(tuple) + max(tuple)
+athletes = [('Дима', 10, 130, 35), ('Тимур', 11, 135, 39), ('Руслан', 9, 140, 33), ('Рустам', 10, 128, 30), ('Амир', 16, 170, 70), ('Рома', 16, 188, 100), ('Матвей', 17, 168, 68), ('Петя', 15, 190, 90)]
 
+number = int(input())
 
-print(sorted(numbers, key=sorting))
+athletes.sort(key=sorting)
+
+for athlete in athletes:
+    print(*athlete)
