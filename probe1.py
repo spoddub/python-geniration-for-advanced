@@ -1,17 +1,9 @@
-def func(number):
-        answer = True
-        if number % 19 == 0 or number % 13 == 0:
-                answer = True
-        else:
-                answer = False
-
-        return answer
+func = lambda word: str(word).lower().endswith('a') and str(word).lower().startswith('a')
 
 
-
-
-print(func(19))
-print(func(13))
-print(func(20))
-print(func(15))
-print(func(247))
+print(func('abcd'))
+print(func('bcda'))
+print(func('abcda'))
+print(func('Abcd'))
+print(func('bcdA'))
+print(func('abcdA'))
