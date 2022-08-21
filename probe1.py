@@ -1,13 +1,3 @@
-is_num = lambda number: number.replace('.', '', 1) .isdecimal()
+words = ['beverage', 'monday', 'abroad', 'bias', 'abuse', 'abolish', 'abuse', 'abuse', 'bid', 'wednesday', 'able', 'betray', 'accident', 'abduct', 'bigot', 'bet', 'abandon', 'besides', 'access', 'friday', 'bestow', 'abound', 'absent', 'beware', 'abundant', 'abnormal', 'aboard', 'about', 'accelerate', 'abort', 'thursday', 'tuesday', 'sunday', 'berth', 'beyond', 'benevolent', 'abate', 'abide', 'bicycle', 'beside', 'accept', 'berry', 'bewilder', 'abrupt', 'saturday', 'accessory', 'absorb']
 
-print(is_num('10.34ab'))
-print(is_num('10.45'))
-print(is_num('-18'))
-print(is_num('-34.67'))
-print(is_num('987'))
-print(is_num('abcd'))
-print(is_num('123.122.12'))         
-print(is_num('-123.122'))
-print(is_num('--13.2'))
-
-
+print(*sorted(filter(lambda word: len(word) == 6, words)))
