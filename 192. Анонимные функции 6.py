@@ -5,3 +5,4 @@
 is_non_negative_num = lambda q: q.replace('.', '', 1).isdigit()
 
 is_num = lambda q: is_non_negative_num(q[1:]) if q[0] == '-' else is_non_negative_num(q)
+
