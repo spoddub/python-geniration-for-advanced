@@ -2,4 +2,3 @@ mixed_list = ['beside', 48, 'accelerate', 28, 'beware', 'absorb', 'besides', 'be
 
 print(*sorted(mixed_list, key=lambda x: str(x)))
 
-
