@@ -10,3 +10,4 @@ data = [(19542209, 'New York'), (4887871, 'Alabama'), (1420491, 'Hawaii'), (6262
 
 for i in sorted(data, key=lambda x: x[1][-1], reverse=True):
     print(f"{i[1]}: {i[0]}")
+
