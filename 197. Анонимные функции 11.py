@@ -5,4 +5,3 @@ mixed_list = ['tuesday', 'abroad', 'abuse', 'beside', 'monday', 'abate', 'access
 
 
 print(max(mixed_list, key=lambda x: x if isinstance(x, int) else 0))
-
