@@ -14,4 +14,3 @@ for number in numbers:
     res.append(round(number, 2))
 
 print(*res, sep='\n')
-
