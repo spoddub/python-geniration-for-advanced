@@ -10,3 +10,4 @@ def average(x):
     return sum(x) / len(x)
 print(min(numbers, key=average))
 print(max(numbers, key=average))
+
