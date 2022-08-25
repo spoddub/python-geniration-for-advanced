@@ -9,3 +9,4 @@ def mult(items):
     return result
 
 print(sum(mult(numbers)))
+
