@@ -30,7 +30,3 @@ def resulting(number, word):
 
 num, wrd = int(input()), input().lower()
 print(resulting(num, wrd))
-
-
-
-
