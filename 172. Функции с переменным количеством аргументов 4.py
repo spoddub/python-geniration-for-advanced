@@ -9,3 +9,4 @@ def greet(name, *args):
     for a in args:
         result += ' and ' + a
     return result + '!'
+
