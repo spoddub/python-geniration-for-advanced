@@ -4,4 +4,3 @@
 # и False в противном случае.
 
 func = lambda word: str(word).lower().endswith('a') and str(word).lower().startswith('a')
-
