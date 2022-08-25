@@ -20,3 +20,4 @@ athletes.sort(key=sorting)
 
 for athlete in athletes:
     print(*athlete)
+
