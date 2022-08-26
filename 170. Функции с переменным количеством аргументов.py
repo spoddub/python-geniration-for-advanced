@@ -6,4 +6,3 @@ def sq_sum(*args):
     for i in args:
         sp.append(i ** 2)
     return sum(sp)
-
