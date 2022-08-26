@@ -19,4 +19,3 @@ def print_products(*args):
             print(str(num) + ')', product)
     else:
         print('Нет продуктов')
-
