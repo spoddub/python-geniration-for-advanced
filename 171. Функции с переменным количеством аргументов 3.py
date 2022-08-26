@@ -17,4 +17,3 @@ def mean(*args):
         return sum(sp) / len(sp)
     if len(sp) == 0:
         return 0.0
-
