@@ -30,4 +30,3 @@ data = [['Tokyo', 35676000, 'primary'],
 new_data = filter(lambda x: 'primary' in x and x[1] > 10000000, data)
 sort_data = sorted(map(lambda x: x[0], new_data))
 print('Cities:', reduce(lambda x, y: x + ', ' + y, sort_data))
-
