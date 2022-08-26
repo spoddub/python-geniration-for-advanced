@@ -15,4 +15,3 @@ def sorting(tuple):
 
 
 print(sorted(numbers, key=sorting))
-
