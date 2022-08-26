@@ -10,4 +10,3 @@ def distance(a):
 
 
 print(sorted(points, key=distance))
-
