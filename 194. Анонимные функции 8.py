@@ -7,4 +7,3 @@ nums = [46, 61, 34, 17, 56, 26, 93, 1, 3, 82, 71, 37, 80, 27, 77, 94, 34, 100, 3
 
 res = list(map(lambda x: x//2 if x%2==0 else x, filter(lambda x: x%2==0 or (x%2!=0 and x<47), nums)))
 print(*res)
-
