@@ -9,4 +9,3 @@ sorted_data = sorted(data)
 new_data = sorted(sorted_data, key=lambda word: len(word))
 
 print(*new_data)
-
