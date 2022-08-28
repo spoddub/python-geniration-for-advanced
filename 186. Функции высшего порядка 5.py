@@ -6,3 +6,4 @@ def func_apply(function, items):
     for item in items:
         result.append(function(item))
     return result
+
