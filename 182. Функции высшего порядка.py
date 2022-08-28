@@ -15,3 +15,4 @@ for number in numbers:
 
 print(*res, sep='\n')
 
+
