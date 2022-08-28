@@ -22,3 +22,4 @@ def summing(num):
 
 string.sort(key=summing)
 print(*string)
+
