@@ -13,3 +13,4 @@ def matrix(n =1,m = 0, a = 0):
     elif n != 1 and not m:
         m = n
     return [[a]*m for _ in range(n)]
+
