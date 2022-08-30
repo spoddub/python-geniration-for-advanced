@@ -1,7 +1,7 @@
-numbers = [10, 30, 20, 50, 40, 60, 70, 80]
+countries = ['Russia', 'USA', 'UK', 'Germany', 'France', 'India']
+capitals = ['Moscow', 'Washington', 'London', 'Berlin', 'Paris', 'Delhi']
+population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
 
-total = 0
-for index, number in enumerate(numbers, 1):
-    if index % 2 == 0:
-        total += number
-print(total)
+for country in zip(capitals, countries, population):
+    print(country[0], 'is the capital of', str(country[1]) + ',', 'population equal', country[2], 'people.')
+
