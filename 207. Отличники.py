@@ -15,3 +15,4 @@ for _ in range(n):
 
 result = all(map(lambda x: any(map(lambda y: y[1] == 5, x)), students))
 print('YES' if result else 'NO')
+
